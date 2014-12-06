@@ -1,0 +1,25 @@
+{
+  "name": "TEDxZJU",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MForever78/TEDxZJU",
+  "description": "TEDxZJU official site",
+  "main": "index.html",
+  "keywords": [
+    "TEDxZJU"
+  ],
+  "authors": [
+    "MForever78"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "purecss": "~0.5.0",
+  }
+}
