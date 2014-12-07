@@ -13,18 +13,23 @@ a {
     color: black;
 }
 
-.pure-menu li {
-    padding: 40px 20px;
-}
-
 /* Layout */
 
+#header {
+    max-width: 1297px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #footer {
+    max-width: 1279px;
+    margin: 0 auto;
     border-top: solid 1px #979797;
+    text-align: center;
 }
 
 #footer li {
-    padding: 30px 15px;
+    padding: 20px 10px;
 }
 
 /* Status */
@@ -40,11 +45,17 @@ a {
 /* Modules */
 
 .slide {
+    min-width: 640px;
+    max-width: 1279px;
     position: relative;
 }
 
 .slide-img {
     padding: 120px 0;
+}
+
+.slide-half {
+    position: relative;
 }
 
 .slide-text {
@@ -61,6 +72,19 @@ a {
 
 .slide-text p {
     line-height: 1.8em;
+}
+
+.pure-menu li {
+    padding: 40px 10px;
+}
+
+.pure-menu li a:hover, .pure-menu li a:focus {
+    background-color: #ffd9d3;
+}
+
+.pure-menu-horizontal {
+    width: 1024px;
+    margin: auto;
 }
 
 /* Responsive */
