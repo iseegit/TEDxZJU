@@ -31,5 +31,5 @@ gulp.task('img', function() {
 
 gulp.task('watch', function() {
   gulp.watch(src.css, ['css']);
-  gulp.watch(src.images, ['images']);
+  gulp.watch(src.images, ['img']);
 });
