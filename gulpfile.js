@@ -10,8 +10,8 @@ var src = {
 };
 
 var dest = {
-  css: 'css',
-  images: 'img'
+  css: 'static/css',
+  images: 'static/img'
 }
 
 gulp.task('css', function() {
