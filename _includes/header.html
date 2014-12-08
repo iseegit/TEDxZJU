@@ -1,17 +1,33 @@
 <div id="header">
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <a class="pure-menu-heading" href="#">
-      <img class="pure-img" src="{{ site.url }}/static/img/logo.png" alt="TEDx logo">
-    </a>
-    <ul>
-      <li class="active"><a href="{{ site.url }}/">Home</a></li>
-      <li><a href="{{ site.url }}/about">About</a></li>
-      <li><a href="{{ site.url }}/news">News</a></li>
-      <li><a href="{{ site.url }}/guest">Guest</a></li>
-      <li><a href="{{ site.url }}/volunteer">Volunteer</a></li>
-    </ul>
-    <form class="pure-form is-inline pure-hidden-lg pure-hidden-md pure-hidden-sm pure-hidden-xs" action="search">
-      <input class="pure-input-rounded" type="text" placeholder="Search">
-    </form>
-  </div><!-- pure menu -->
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- broken responsive
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navigator">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        -->
+        <a class="navbar-brand" href="{{ site.url }}/">
+          <img src="{{ site.url }}/static/img/logo.png" alt="TEDx logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navigator">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="{{ site.url }}/">Home</a></li>
+          <li><a href="{{ site.url }}/about">About</a></li>
+          <li><a href="{{ site.url }}/news">News</a></li>
+          <li><a href="{{ site.url }}/guest">Guest</a></li>
+          <li><a href="{{ site.url }}/volunteer">Volunteer</a></li>
+        </ul>
+        <form class="navbar-form navbar-right visible-lg-inline-block visible-md-inline-block" role="search" action="search">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Search">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div><!-- navbar -->
 </div>
