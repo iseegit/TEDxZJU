@@ -2,3 +2,13 @@
 layout: page
 title: Guest
 ---
+
+<div class="content-wrapper">
+  {% for guest in site.posts %}
+  {% if guest.categories contains guest %}
+    <div class="guest-item">
+      <img class="guest-img" src="{{ site.url }}/static/img/{{ guest.feature }}" alt="{{ guest.title }}">
+    </div>
+  {% endif %}
+  {% endfor %}
+</div>

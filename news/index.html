@@ -3,6 +3,20 @@ layout: page
 title: News
 ---
 
-<div class="content-wrapper">
-  
+<div class="content-wrapper container">
+  {% for post in site.posts %}
+  {% if post.categories contains "news" %}
+  <div class="row post-wrapper">
+    <div class="col-md-7">
+      <h3 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="post-date">{{ post.date | date_to_string }}</div>
+      <img class="img-responsive post-img" src="{{ site.url }}/static/img/{{ post.feature }}" alt="{{ post.title }}">
+    </div>
+    <div class="col-md-5">
+      <div class="post-summary">{{ post.summary }}</div>
+      <a class="btn-more" href="{{ site.url }}{{ post.url }}">more</a>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
 </div>

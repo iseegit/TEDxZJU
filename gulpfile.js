@@ -3,6 +3,7 @@ var minifycss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var rename = require('gulp-rename');
+var livereload = require('gulp-livereload');
 
 var src = {
   css: 'assets/css/main.css',
@@ -30,6 +31,11 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', function() {
+
   gulp.watch(src.css, ['css']);
   gulp.watch(src.images, ['img']);
+
+  livereload.listen();
+  gulp.watch(['_site/**']).on('change', livereload.changed);
 });
+
