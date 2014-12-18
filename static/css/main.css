@@ -3,14 +3,6 @@ body {
     font-family: "Verdana", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    float: left;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -25,6 +17,14 @@ a {
     font-size: 12pt;
 }
 
+#header ul {
+    list-style-type: none;
+}
+
+#header li {
+    float: left;
+}
+
 #footer {
     max-width: 1279px;
     margin: 0 auto;
@@ -32,7 +32,12 @@ a {
     padding: 20px;
 }
 
+#footer ul {
+    list-style-type: none;
+}
+
 #footer li {
+    float: left;
     padding-right: 10px;
 }
 
@@ -150,6 +155,7 @@ a {
 }
 
 .post-title {
+    color: black;
     font-size: 18pt;
 }
 
@@ -157,18 +163,51 @@ a {
     color: #777
 }
 
+.post-content {
+    color: grey;
+}
+
+.post-content img {
+    background-color: grey;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.post-content p {
+    line-height: 1.8em;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+    color: #333;
+    margin-top: 2em;
+}
+
 .post-summary {
     max-height: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 2em;
-    font-size: 14pt;
+    font-size: 1.2em;
 }
 
 .post-img {
     margin: 30px auto;
     max-height: 500px;
     width: auto;
+}
+
+.guest-item {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+}
+
+.guest-img {
+    width: 100%;
 }
 
 .btn-more {
@@ -182,4 +221,11 @@ a {
     border-radius: 20px;
 }
 
+/* Guest */
 
+.guest-item {
+    float: left;
+}
+
+.guest-img {
+}
