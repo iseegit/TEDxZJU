@@ -1,0 +1,10 @@
+@media screen and (max-width: 980px){
+    .content-nav li {
+        width: 75px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+}

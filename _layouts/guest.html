@@ -9,12 +9,17 @@
     {% include header.html %}
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <h2 class="post-title">{{ page.title }}</h2>
-          <article class="post-content typo">{{ content }}</article>
+      <div class="row guest">
+        <div class="col-md-4 title">
+          <div class="name">{{page.name}}</div>
+          <div class="job">{{page.job}}</div>
         </div>
+        <div class="col-md-8 detail">{{content}}</div>
       </div>
+      <div class="row intro-video">
+        <embed height="525" align="middle" width="100%" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="never" swliveconnect="true" devicefont="true" wmode="transparent" quality="high" src="http://player.youku.com/player.php/Type/Folder/Fid/23596155/Ob/1/sid/XNTk4OTE0MTg0/v.swf">
+      </div>
+      <div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.url }}"></div>
     </div>
 
     {% include footer.html %}

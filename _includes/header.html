@@ -9,18 +9,18 @@
           <span class="icon-bar"></span>
         </button>
         -->
-        <a class="navbar-brand" href="{{ site.url }}/">
-          <img src="{{ site.url }}/static/img/logo.png" alt="TEDx logo">
+        <a class="navbar-brand" href="/">
+          <img src="/static/img/logo.png" alt="TEDx logo">
         </a>
       </div>
 
       <div class="collapse navbar-collapse" id="navigator">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="{{ site.url }}/">Home</a></li>
-          <li><a href="{{ site.url }}/about">About</a></li>
-          <li><a href="{{ site.url }}/news">News</a></li>
-          <li><a href="{{ site.url }}/guest">Guest</a></li>
-          <li><a href="{{ site.url }}/volunteer">Volunteer</a></li>
+          <li data-nav-target="home"><a href="/">Home</a></li>
+          <li data-nav-target="about"><a href="/about">About</a></li>
+          <li data-nav-target="news"><a href="/news">News</a></li>
+          <li data-nav-target="guest"><a href="/guest">Guest</a></li>
+          <li data-nav-target="volunteer"><a href="/volunteer">Volunteer</a></li>
         </ul>
         <form class="navbar-form navbar-right visible-lg-inline-block visible-md-inline-block" role="search" action="search">
           <div class="form-group">

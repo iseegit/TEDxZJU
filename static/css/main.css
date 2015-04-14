@@ -11,7 +11,7 @@ a {
 /* Layout */
 
 #header {
-    max-width: 1297px;
+    max-width: 1140px;
     margin: 0 auto;
     text-align: center;
     font-size: 12pt;
@@ -106,8 +106,10 @@ a {
     padding-left: 50px;
 }
 
-.navbar {
+#header .navbar {
     border-width: 0;
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
 }
 
 .navbar-brand {
@@ -122,20 +124,23 @@ a {
 .navbar-default {
     color: #777;
     background-color: transparent;
+    margin-bottom: 0;
 }
 
 .navbar-form {
-    line-height: 80px;
+    line-height: 70px;
 }
 
 .navbar-form .form-control {
     border-radius: 20px;
 }
-
+.navbar-form .form-group .form-control {
+    width: 180px;
+}
 .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .navbar-default .navbar-nav > li.active > a,
@@ -206,7 +211,7 @@ a {
     width: 33.3%;
 }
 
-.guest-img {
+.guest-item img {
     width: 100%;
 }
 
@@ -222,10 +227,151 @@ a {
 }
 
 /* Guest */
-
 .guest-item {
     float: left;
 }
+.guest {
+    margin-top: 30px;
+}
+.guest .title {
+    border-right: 1px solid #bdbdbd;
+}
+.guest .name {
+    font-size: 36px;
+    font-weight: bold;
+}
+.guest .job {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.guest .detail {
+    padding-left: 20px;
+}
+.intro-video {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid #bdbdbd;
+}
+/*comment part*/
+#ds-thread #ds-reset div.ds-meta {
+    border: none;
+}
+#ds-reset .ds-powered-by {
+    display: none;
+}
 
-.guest-img {
+/* volunteer*/
+.content-nav {
+    background-color: #eaeaea;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 35px;
+    overflow: hidden;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    box-shadow: 0 7px 5px 0 #cfcfcf;
+}
+.content-nav li {
+    float: left;
+    text-align: center;
+    width: 13%;
+    border-radius: 20px;
+}
+.content-nav li a {
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+}
+.content-nav li:hover,
+.content-nav li.active {
+    background-color: #c3c2c2;
+}
+.content-nav li a:hover,
+.content-nav li a:focus {
+    color: #404040;
+    text-decoration: none;
+    outline: none;
+}
+a.volunteer-img {
+    display: block;
+}
+
+/*introduction dialog*/
+body.dialog-opened {
+    overflow: hidden;
+}
+.introductionDialog {
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    left: 0;
+    outline: 0 none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1050;
+    background-color: rgba(7, 7, 7, 0.5);
+}
+.dialog {
+    margin: 30px auto;
+    width: 670px;
+    position: relative;
+}
+.dialog-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(232, 233, 234);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+}
+.introductionDialog .content {
+    background-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0 none;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+.introductionDialog .content .avatar {
+    float: left;
+}
+.introductionDialog .content .intro {
+    margin-left: 350px;
+    width: 250px;
+}
+.introductionDialog .content .name {
+    font-size: 22px;
+    border-bottom: 1px solid rgb(77, 78, 78);
+    position: relative;
+    height: 50px;
+    text-align: center;
+}
+.introductionDialog .content .sub-name {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fff;
+}
+.introductionDialog .describe {
+    margin: 20px;
+    height: 200px;
+    text-align: center;
+}
+.introductionDialog .logo {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 105px;
+    height: 25px;
 }
